@@ -1003,6 +1003,26 @@ section article {
 
 }
 
+footer{
+
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 114, 223, 1) 0%, rgba(255, 151, 70, 1) 48%, rgba(255, 200, 69, 1) 100%);
+    align-items: center;
+
+}
+
+footer p{
+
+    padding: 5px;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--main-font-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+
+}
+
+
 @media only screen and (min-width: 1300px) {
 
     .header .header-tags {

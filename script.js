@@ -21,6 +21,6 @@ function sendMail() {
     var subject = "Message from " + name;
     var body = "Name: " + name + "%0D%0AEmail: " + email + "%0D%0AMessage: " + message;
 
-    window.location.href = "mailto:recipient@example.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    window.location.href = "mailto:mira99mahmoud@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 }
 

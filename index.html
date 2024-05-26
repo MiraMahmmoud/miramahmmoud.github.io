@@ -7,6 +7,8 @@
     , initial-scale=1.0">
     <title>Mira's Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
@@ -303,7 +305,7 @@
     <section id="contact" class="contact">
         <article>
 
-            <div class="contact-left">
+            <form onsubmit="sendMail(); return false;" class="contact-left">
 
                 <h1 class='contact-left-title'>Contact Me</h1>
                 <p class="contact-left-p">Feel free to reach out to discuss opportunities or for any inquiries.</p>
@@ -313,21 +315,21 @@
                     <div class="contact-left-field-line">
 
                         <span>Name</span>
-                        <input type="text">
+                        <input id="name" name="name" required type="text">
 
                     </div>
 
                     <div class="contact-left-field-line">
 
                         <span>Email</span>
-                        <input type="text">
+                        <input id="email" name="email" required type="email">
 
                     </div>
 
                     <div class="contact-left-field-line">
 
                         <span>Message</span>
-                        <input type="text">
+                        <input id="message" name="message" required type="text">
 
                     </div>
 
@@ -335,7 +337,7 @@
 
                 <button class="contact-left-button"><span>SEND</span></button>
 
-            </div>
+            </form>
 
             <div class="contact-right">
 
@@ -345,36 +347,36 @@
                     <span class='square'></span>
                     <h2>Info</h2>
 
-                    <div class="contact-right-card-line">
+                    <a href="mailto:mira99mahmoud@gmail.com" target="_blank" class="contact-right-card-line">
 
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
+                            <path class="--svg-fill"
                                 d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm3.519 0L12 11.671 18.481 6zM20 7.329l-7.341 6.424a1 1 0 0 1-1.318 0L4 7.329V18h16z"
-                                fill="#ffffff" />
+                                 />
                         </svg>
                         <p>mira99mahmoud@gmail.com</p>
 
-                    </div>
+                    </a>
 
-                    <div class="contact-right-card-line">
+                    <a href="https://wa.me/96176672737" target="_blank" class="contact-right-card-line">
 
                         <svg viewBox="0 0 24 24" data-name="Line Color" xmlns="http://www.w3.org/2000/svg"
                             class="icon line-color">
-                            <path
+                            <path class="--svg-stroke"
                                 d="M21 15v3.93a2 2 0 0 1-2.29 2A18 18 0 0 1 3.14 5.29 2 2 0 0 1 5.13 3H9a1 1 0 0 1 1 .89 10.7 10.7 0 0 0 1 3.78 1 1 0 0 1-.42 1.26l-.86.49a1 1 0 0 0-.33 1.46 14.1 14.1 0 0 0 3.69 3.69 1 1 0 0 0 1.46-.33l.49-.86a1 1 0 0 1 1.3-.38 10.7 10.7 0 0 0 3.78 1 1 1 0 0 1 .89 1"
-                                style="fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2" />
+                                style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2" />
                         </svg>
 
                         <p>+961 76 672 737</p>
 
-                    </div>
+                    </a>
 
                     <div class="contact-right-card-line">
 
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
+                            <path class="--svg-fill"
                                 d="M12 2c-4.4 0-8 3.6-8 8 0 5.4 7 11.5 7.3 11.8.2.1.5.2.7.2s.5-.1.7-.2C13 21.5 20 15.4 20 10c0-4.4-3.6-8-8-8m0 17.7c-2.1-2-6-6.3-6-9.7 0-3.3 2.7-6 6-6s6 2.7 6 6-3.9 7.7-6 9.7M12 6c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4m0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2"
-                                fill="#ffffff" />
+                               />
                         </svg>
 
                         <p>Lebanon - Beirut</p>

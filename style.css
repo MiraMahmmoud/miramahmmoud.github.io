@@ -23,6 +23,12 @@ body {
 
 }
 
+p{
+
+    font-size: 1rem;
+
+}
+
 
 header {
 
@@ -417,7 +423,8 @@ section article {
 .about .about-right p {
 
     font-family: var(--font-family);
-    color: var(--main-font-color)
+    color: var(--main-font-color);
+    font-size: 1rem;
 }
 
 .about .about-right a {
@@ -923,17 +930,34 @@ section article {
 
 .contact article .contact-right .contact-right-card .contact-right-card-line {
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 30px 1fr;
     width: 100%;
     gap: 20px;
     align-items: center;
+    text-decoration: none;
 
 }
+
 
 .contact article .contact-right .contact-right-card .contact-right-card-line svg {
 
     max-width: 35px;
-    color: white;
+
+
+}
+
+.--svg-fill{
+
+    fill: white;
+    transition: 0.4s ease-in-out;
+
+}
+
+.--svg-stroke{
+
+    stroke:#ffffff;
+    transition: 0.4s ease-in-out;
 
 }
 
@@ -942,8 +966,30 @@ section article {
     color: white;
     font-family: var(--font-family);
     font-size: 0.9rem;
+    overflow-wrap: break-word;
+    transition: 0.4s ease-in-out;
 
 }
+
+.contact article .contact-right .contact-right-card .contact-right-card-line:hover p{
+
+        color: #c20192;
+
+}
+
+.contact article .contact-right .contact-right-card .contact-right-card-line:hover .--svg-fill{
+
+ fill: #c20192;
+
+}
+
+
+.contact article .contact-right .contact-right-card .contact-right-card-line:hover .--svg-stroke{
+
+    stroke: #c20192;
+   
+   }
+   
 
 .contact-right .contact-right-card .square {
 

@@ -13,3 +13,14 @@ buttons.forEach(button => {
         document.querySelector(`[data-content="${target}"]`).style.display = 'flex';
     });
 });
+
+function sendMail() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    var subject = "Message from " + name;
+    var body = "Name: " + name + "%0D%0AEmail: " + email + "%0D%0AMessage: " + message;
+
+    window.location.href = "mailto:recipient@example.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+}
+

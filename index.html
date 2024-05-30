@@ -8,6 +8,8 @@
     <title>Mira's Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/Animation/animation.css">
+    
 
 </head>
 
@@ -15,17 +17,17 @@
 
     <header>
         <div class="header">
-            <div class="header-name"><span>Mira</span>
+            <div class="header-name fadein"><span>Mira</span>
                 <p>Mahmoud</p>
             </div>
 
-            <div class="header-tags"><a href="#home">Home</a>
+            <div class="header-tags  fadein"><a href="#home" >Home</a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#experience">Skills</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div class="header-talk">
+            <div class="header-talk fadein">
                 <button><a href="https://wa.me/96176672737" target="_blank">Let's Talk</a></button>
             </div>
         </div>
@@ -35,7 +37,7 @@
 
         <article>
 
-            <div class="home-right">
+            <div class="home-right fade-left">
                 <div class="right-social">
 
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +62,7 @@
                     </svg>
 
                 </div>
-                <div class="right-name">
+                <div class="right-name ">
 
                     <div class='right-name-title'>
                         <h1>Hey There,<br></h1><span>It's Mira Mahmoud</span>
@@ -83,7 +85,7 @@
 
             </div>
 
-            <div class="home-left">
+            <div class="home-left fade-right">
 
                 <img src="/Home Page pic-01.png" alt="">
 
@@ -96,9 +98,9 @@
     <section id="about" class="about">
         <article>
 
-            <img src="/About Me.jpg" alt="">
+            <img src="/About Me.jpg" class="fade-left" alt="">
 
-            <div class="about-right">
+            <div class="about-right fade-right">
                 <h1>About Me</h1>
                 <p>I am a detail-oriented accountant with 3 years of experience in financial management, auditing, and
                     tax preparation. I excel at preparing financial statements, ensuring compliance, and optimizing
@@ -117,7 +119,7 @@
     <section id="experience" class="experience">
         <article>
 
-            <div class="experience-left">
+            <div class="experience-left fade-left">
                 <div class="experience-title">
                     <h1>Skills & Experience</h1>
                     <p>3 years in accounting. Strong in financial management, auditing, tax prep. Proficient in
@@ -200,7 +202,7 @@
             </div>
 
 
-            <div class="experience-right-main">
+            <div class="experience-right-main fade-right">
 
                 <div class="experience-right-title">
 
@@ -305,7 +307,7 @@
     <section id="contact" class="contact">
         <article>
 
-            <form onsubmit="sendMail(); return false;" class="contact-left">
+            <form onsubmit="sendMail(); return false;" class="contact-left fade-left">
 
                 <h1 class='contact-left-title'>Contact Me</h1>
                 <p class="contact-left-p">Feel free to reach out to discuss opportunities or for any inquiries.</p>
@@ -339,7 +341,7 @@
 
             </form>
 
-            <div class="contact-right">
+            <div class="contact-right fade-right">
 
 
                 <div class="contact-right-card">
@@ -389,7 +391,7 @@
         </article>
     </section>
 
-    <footer class="footer">
+    <footer class="footer ">
 
         <a href="https://shadifarhat.github.io" target="_blank">
             <p>Developed and Designed by Shadi Farhat © 2024</p>
@@ -401,5 +403,6 @@
 </body>
 
 <script src="script.js"></script>
+<script src="/Animation/site.js" defer></script>
 
 </html>

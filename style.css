@@ -59,13 +59,14 @@ header {
 
     50% {
         transform: translateY(-20px);
-        /* Adjust the jump height as needed */
     }
 
     100% {
         transform: translateY(0);
     }
 }
+
+
 
 .header .header-name {
 
@@ -98,7 +99,6 @@ header {
     font-weight: bold;
     background-image: linear-gradient(90deg, rgba(255, 114, 223, 1) 0%, rgba(255, 151, 70, 1) 48%, rgba(255, 200, 69, 1) 100%);
     -webkit-background-clip: text;
-    /* For webkit browsers */
     background-clip: text;
     color: transparent;
     font-size: 2rem;
@@ -120,15 +120,17 @@ header {
     text-decoration: none;
     font-weight: bold;
     color: var(--main-font-color);
+    transition: 0.4s ease-in-out;
 
 }
 
-.header .header-tags a:first-child {
+.header .header-tags a:hover{
 
     background: linear-gradient(90deg, rgba(255, 114, 223, 1) 0%, rgba(255, 151, 70, 1) 48%, rgba(255, 200, 69, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 .header .header-talk button {
 
@@ -172,6 +174,8 @@ section {
 }
 
 
+
+
 section article {
 
     display: flex;
@@ -183,6 +187,7 @@ section article {
     align-items: center;
     margin-inline: auto;
     row-gap: 70px;
+
 
 }
 
